@@ -1,0 +1,9 @@
+@use '../styles/abstracts/mixins';
+
+.paragraph {
+    font-size: 1rem;
+    color: white;
+    @include mixins.breakpoint(sm) {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,16 @@
+@use '../styles/abstracts/mixins';
+
+.container {
+	padding: 0 1rem;
+	width: 100%;
+	@include mixins.breakpoint(sm) {
+		width: 90%;
+		margin: 0 auto;
+	}
+	@include mixins.breakpoint(md) {
+		width: 1000px;
+	}
+	@include mixins.breakpoint(lg) {
+		width: 1200px;
+	}
+}
